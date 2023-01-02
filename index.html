@@ -9,8 +9,21 @@
 </head>
 <body>
     <nav id="top-nav">
-        <h1><a>ปิยะ</a></h1>
+        <h1><a href="#">ปิยะ</a></h1>
         <ul id="menu">
+            <li><a href="#">โปรไฟล์</a></li>
+            <li><a href="#">การศึกษา</a></li>
+            <li><a href="#">ทักษะ</a></li>
+            <li><a href="#">ผลงาน</a></li>
+            <li><a href="#">เกียรติบัตร</a></li>
+            <li><a href="#">กิจกรรม</a></li>
+            <li><a href="#">จดหมายแนะนำตัว</a></li>
+        </ul>
+        
+        <img onclick="displayCloudMenu()" id="burger-img" src="asset/menu-burger.svg" alt="">
+        <ul id="burger-menu">
+            <img onclick="closeCloudMenu()" id="cloud-cross-img" src="asset/cross.svg" alt="">
+            <li><a href="#"></a></li>
             <li><a href="#">โปรไฟล์</a></li>
             <li><a href="#">การศึกษา</a></li>
             <li><a href="#">ทักษะ</a></li>
@@ -21,5 +34,6 @@
         </ul>
     </nav>
     
+    <script src="app.js"></script>
 </body>
 </html>
