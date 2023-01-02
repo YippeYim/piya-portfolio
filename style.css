@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@500&display=swap');
+*{
+    margin:0px;
+    border:1px solid red;
+    line-height:2rem;
+}
+html{
+    font-size:1.5rem;
+    font-family: 'Niramit';
+}
+body{
+    min-height:100vh;
+}
+#top-nav{
+    display:flex;
+    justify-content: space-between;
+    padding:1em;
+}
+#top-nav h1{
+    font-size:2rem;
+}
+#menu{
+    list-style: none;
+    display:flex;
+    gap:1em;
+}
