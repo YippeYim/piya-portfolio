@@ -95,6 +95,17 @@ body{
 	border-radius: 50%;
     padding-bottom: 0px;
 }
+
+#introduce-container{
+	min-height:100vh;
+	font-size:3vw;
+	text-align: center;
+	display:flex;
+}
+#introduce-container h2{
+	margin:auto 2em;
+}
+
 #personal-information{
 	display:flex;
 	font-size:2.8rem;
