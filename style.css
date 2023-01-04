@@ -138,6 +138,29 @@ body{
 	padding:1em;
 }
 
+#skill-container{
+	display:flex;
+	gap:2em;
+	width:fit-content;
+	margin:auto;
+	font-size:2.4rem;
+}
+.skill-box{
+	display:flex;
+	flex-direction: column;
+}
+.skill-box img{
+	max-width:20vw;	
+	margin:auto;
+}
+.skill-box h3{
+	font-size:3.6rem;
+	text-align: center;
+}
+.skill-box p{
+	margin:0.2em 1em;
+}
+
 @media screen and (max-width:1150px){
 	/* change to burger menu */
 	#menu{
@@ -198,5 +221,12 @@ body{
 	#personal-information ul{
 		margin:auto;
 		padding:0em 0.5em;
+	}
+
+	#skill-container{
+		flex-direction: column;
+	}
+	.skill-box img{
+		max-width:40vw;	
 	}
 }
