@@ -274,6 +274,12 @@ body{
 	margin:0em auto;
 }
 
+.bookmark{
+	height:fit-content;
+	padding-left:2em;
+	font-size: 1vw;
+}
+
 .hidden{
 	display:none;
 }

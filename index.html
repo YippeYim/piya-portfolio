@@ -1,194 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Niramit:wght@500&family=Sriracha&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Niramit:wght@500&family=Sriracha&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="top-nav">
-        <h1><a href="#">ปิยะ</a></h1>
-        <ul id="menu">
-            <li><a href="#">โปรไฟล์</a></li>
-            <li><a href="#">การศึกษา</a></li>
-            <li><a href="#">ทักษะ</a></li>
-            <li><a href="#">ผลงาน</a></li>
-            <li><a href="#">เกียรติบัตร</a></li>
-            <li><a href="#">กิจกรรม</a></li>
-            <li><a href="#">ช่องทางการติดต่อ</a></li>
-        </ul>
-        
-        <img onclick="displayCloudMenu()" id="burger-img" src="asset/menu-burger.svg" alt="">
-        <ul id="burger-menu">
-            <img onclick="closeCloudMenu()" id="cloud-cross-img" src="asset/cross.svg" alt="">
-            <!-- <li><a href="#"></a></li> -->
-            <li><a href="#">โปรไฟล์</a></li>
-            <li><a href="#">การศึกษา</a></li>
-            <li><a href="#">ทักษะ</a></li>
-            <li><a href="#">ผลงาน</a></li>
-            <li><a href="#">เกียรติบัตร</a></li>
-            <li><a href="#">กิจกรรม</a></li>
-            <li><a href="#">ช่องทางการติดต่อ</a></li>
-        </ul>
-    </nav>
+	<nav id="top-nav">
+		<h1><a href="#">ปิยะ</a></h1>
+		<ul id="menu">
+			<li><a href="#bm-personal">โปรไฟล์</a></li>
+			<li><a href="#bm-education">การศึกษา</a></li>
+			<li><a href="#bm-skill">ทักษะ</a></li>
+			<li><a href="#bm-work">ผลงาน</a></li>
+			<li><a href="#bm-certificate">เกียรติบัตร</a></li>
+			<li><a href="#contact-container">ช่องทางการติดต่อ</a></li>
+		</ul>
+		
+		<img onclick="displayCloudMenu()" id="burger-img" src="asset/menu-burger.svg" alt="">
+		<ul id="burger-menu">
+			<img onclick="closeCloudMenu()" id="cloud-cross-img" src="asset/cross.svg" alt="">
+			<!-- <li><a href="#"></a></li> -->
+			<li><a href="#bm-personal">โปรไฟล์</a></li>
+			<li><a href="#bm-education">การศึกษา</a></li>
+			<li><a href="#bm-skill">ทักษะ</a></li>
+			<li><a href="#bm-work">ผลงาน</a></li>
+			<li><a href="#bm-certificate">เกียรติบัตร</a></li>
+			<li><a href="#contact-container">ช่องทางการติดต่อ</a></li>
+		</ul>
+	</nav>
 
-    <div id="black-box">
-        <div>
-            <h1>ปิยะ</h1>
-            <h1>ยิ้มประดิษฐ์</h1>
-        </div>
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" id="profile-img1"></img>
-    </div>
+	<div id="black-box">
+		<div>
+			<h1>ปิยะ</h1>
+			<h1>ยิ้มประดิษฐ์</h1>
+		</div>
+		<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" id="profile-img1"></img>
+	</div>
 
-    <div id="introduce-container">
-        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio vitae repudiandae quos laborum consequuntur tenetur voluptates beatae ex voluptas maiores.</h2>
-    </div>
+	<div id="introduce-container">
+		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio vitae repudiandae quos laborum consequuntur tenetur voluptates beatae ex voluptas maiores.</h2>
+	</div>
 
-    <div id="personal-information">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" id="profile-img2"></img>
-        <ul>
-            <li><strong>Lorem, ipsum.</strong>Lorem.</li>
-            <li><strong>Quaerat, repellendus!</strong>Laborum!</li>
-            <li><strong>Culpa, quaerat.</strong>Praesentium.</li>
-            <li><strong>Quae, enim.</strong>Ex?</li>
-            <li><strong>Necessitatibus, saepe.</strong>Ipsum.</li>
-            <li><strong>Lorem, ipsum.</strong>Lorem.</li>
-            <li><strong>Quaerat, repellendus!</strong>Laborum!</li>
-            <li><strong>Culpa, quaerat.</strong>Praesentium.</li>
-            <li><strong>Quae, enim.</strong>Ex?</li>
-        </ul>
-    </div>
-    <div id="education-box">
-        <span onclick="displayEducationInfoContainer()" id="education-btn">ข้อมูลทางการศึกษา</span>
-    </div>
-    <div id="education-info-container">
-        <img onclick="closeEducationInfoContainer()" id="edu-cross-img" src="asset/cross.svg" alt="">
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-    </div>
+	<div class="bookmark" id="bm-personal">
+		<h1 >ข้อมูลส่วนตัว</h1>
+	</div>
 
-    <div id="skill-container">
-        <div class="skill-box">
-            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
-            <h3>skill1</h3>
-            <p>skill information Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, rem.</p>
-        </div>
-        <div class="skill-box">
-            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
-            <h3>skill1</h3>
-            <p>skill information Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, rem.</p>
-        </div>
-        <div class="skill-box">
-            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
-            <h3>skill1</h3>
-            <p>skill information Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, rem.</p>
-        </div>
-    </div>
+	<div id="personal-information">
+		<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" id="profile-img2"></img>
+		<ul>
+			<li><strong>Lorem, ipsum.</strong>Lorem.</li>
+			<li><strong>Quaerat, repellendus!</strong>Laborum!</li>
+			<li><strong>Culpa, quaerat.</strong>Praesentium.</li>
+			<li><strong>Quae, enim.</strong>Ex?</li>
+			<li><strong>Necessitatibus, saepe.</strong>Ipsum.</li>
+			<li><strong>Lorem, ipsum.</strong>Lorem.</li>
+			<li><strong>Quaerat, repellendus!</strong>Laborum!</li>
+			<li><strong>Culpa, quaerat.</strong>Praesentium.</li>
+			<li><strong>Quae, enim.</strong>Ex?</li>
+		</ul>
+	</div>
 
-    <!-- work -->
-    <div id="work-container">
-        <div class="work-box">
-            <img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
-            <h3>work title</h3>
-            <div>
-                <p>workdetail Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
-                <a href="#">this is a link</a>
-            </div>
-        </div>
-        <div class="work-box">
-            <img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
-            <h3>work title</h3>
-            <div>
-                <p>workdetail Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
-                <a href="#">this is a link</a>
-            </div>
-        </div>
-        <div class="work-box">
-            <img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
-            <h3>work title</h3>
-            <div>
-                <p>workdetail Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
-                <a href="#">this is a link</a>
-            </div>
-        </div>
-        <span onclick="" id="github-btn">
-            <img  src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt=""><h3>More work at my Github.</h3>
-        </span>
-    </div>
+	<div class="bookmark" id="bm-education">
+		<h1 >ข้อมูลทางการศึกษา</h1>
+	</div>
 
-    <!-- certificate -->
-    <div id="cer-container">
-        <div class="cer-box">
-            <img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
-            <h3>work title</h3>
-            <div>
-                <p>workdetail Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
-            </div>
-        </div>
-        <div class="cer-box">
-            <img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
-            <h3>cer title</h3>
-            <div>
-                <p>cer Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
-            </div>
-        </div>
-        <div class="cer-box">
-            <img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
-            <h3>cer title</h3>
-            <div>
-                <p>cer Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
-            </div>
-        </div>
-        <div class="cer-box">
-            <img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
-            <h3>cer title</h3>
-            <div>
-                <p>cer Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
-            </div>
-        </div>
-        <div class="cer-box">
-            <img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
-            <h3>cer title</h3>
-            <div>
-                <p>cer Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
-            </div>
-        </div>
-        <div class="cer-box">
-            <img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
-            <h3>cer title</h3>
-            <div>
-                <p>cer Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
-            </div>
-        </div>
-    </div>
+	<div id="education-box">
+		<span onclick="displayEducationInfoContainer()" id="education-btn">ข้อมูลทางการศึกษา</span>
+	</div>
+	<div id="education-info-container">
+		<img onclick="closeEducationInfoContainer()" id="edu-cross-img" src="asset/cross.svg" alt="">
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+
+	<div class="bookmark" id="bm-skill">
+		<h1 >ทักษะ</h1>
+	</div>
+
+	<div id="skill-container">
+		<div class="skill-box">
+			<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+			<h3>skill1</h3>
+			<p>skill information Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, rem.</p>
+		</div>
+		<div class="skill-box">
+			<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+			<h3>skill1</h3>
+			<p>skill information Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, rem.</p>
+		</div>
+		<div class="skill-box">
+			<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+			<h3>skill1</h3>
+			<p>skill information Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, rem.</p>
+		</div>
+	</div>
+
+	
+	<div class="bookmark" id="bm-work">
+		<h1 >ผลงาน</h1>
+	</div>
+	<!-- work -->
+	<div id="work-container">
+		<div class="work-box">
+			<img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
+			<h3>work title</h3>
+			<div>
+				<p>workdetail Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
+				<a href="#">this is a link</a>
+			</div>
+		</div>
+		<div class="work-box">
+			<img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
+			<h3>work title</h3>
+			<div>
+				<p>workdetail Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
+				<a href="#">this is a link</a>
+			</div>
+		</div>
+		<div class="work-box">
+			<img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
+			<h3>work title</h3>
+			<div>
+				<p>workdetail Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
+				<a href="#">this is a link</a>
+			</div>
+		</div>
+		<span onclick="" id="github-btn">
+			<img  src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt=""><h3>More work at my Github.</h3>
+		</span>
+	</div>
+
+	<div class="bookmark" id="bm-certificate">
+		<h1 >เกียรติบัตร</h1>
+	</div>
+
+	<!-- certificate -->
+	<div id="cer-container">
+		<div class="cer-box">
+			<img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
+			<h3>work title</h3>
+			<div>
+				<p>workdetail Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
+			</div>
+		</div>
+		<div class="cer-box">
+			<img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
+			<h3>cer title</h3>
+			<div>
+				<p>cer Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
+			</div>
+		</div>
+		<div class="cer-box">
+			<img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
+			<h3>cer title</h3>
+			<div>
+				<p>cer Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
+			</div>
+		</div>
+		<div class="cer-box">
+			<img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
+			<h3>cer title</h3>
+			<div>
+				<p>cer Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
+			</div>
+		</div>
+		<div class="cer-box">
+			<img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
+			<h3>cer title</h3>
+			<div>
+				<p>cer Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
+			</div>
+		</div>
+		<div class="cer-box">
+			<img src="https://www.amateurphotographer.co.uk/wp-content/uploads/2017/11/Bliss_Copyright_preview.jpeg" alt="">
+			<h3>cer title</h3>
+			<div>
+				<p>cer Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis, explicabo id praesentium perferendis perspiciatis accusamus! Asperiores nisi odio, perspiciatis, earum cupiditate aperiam voluptas ab, beatae temporibus atque officia pariatur.</p>
+			</div>
+		</div>
+	</div>
 
 
-    <div id="contact-container">
-        <h3>ข่องทางการติดต่อ</h3>
-        <div>
-            <strong>Email:</strong>
-            <p>piya.yim2003@gmail.com <span onclick="" title="copy to clipboard">copy</span></p>
-        </div>
-        <div>
-            <strong>TEl:</strong>
-            <p>12419541275 <span onclick="" title="copy to clipboard">copy</span></p>
-            
-        </div>
-        <div>
-            <strong>school:</strong>
-            <p>PhanatpittayakarnSchool<span onclick="" title="copy to clipboard">copy</span></p>
-        </div>
+	<div id="contact-container">
+		<h3>ข่องทางการติดต่อ</h3>
+		<div>
+			<strong>Email:</strong>
+			<p>piya.yim2003@gmail.com <span onclick="" title="copy to clipboard">copy</span></p>
+		</div>
+		<div>
+			<strong>TEl:</strong>
+			<p>12419541275 <span onclick="" title="copy to clipboard">copy</span></p>
+			
+		</div>
+		<div>
+			<strong>school:</strong>
+			<p>PhanatpittayakarnSchool<span onclick="" title="copy to clipboard">copy</span></p>
+		</div>
 
-        <iframe id="map-small" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15521.530583923777!2d101.1708839!3d13.4504941!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7ae533b70c2aa1a!2sPhanatpittayakarn%20School!5e0!3m2!1sen!2sth!4v1672857455248!5m2!1sen!2sth" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <iframe id="map-smaller" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15521.530583923777!2d101.1708839!3d13.4504941!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7ae533b70c2aa1a!2sPhanatpittayakarn%20School!5e0!3m2!1sen!2sth!4v1672857455248!5m2!1sen!2sth" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <script src="app.js"></script>
-    
+		<iframe id="map-small" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15521.530583923777!2d101.1708839!3d13.4504941!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7ae533b70c2aa1a!2sPhanatpittayakarn%20School!5e0!3m2!1sen!2sth!4v1672857455248!5m2!1sen!2sth" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<iframe id="map-smaller" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15521.530583923777!2d101.1708839!3d13.4504941!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7ae533b70c2aa1a!2sPhanatpittayakarn%20School!5e0!3m2!1sen!2sth!4v1672857455248!5m2!1sen!2sth" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+	<script src="app.js"></script>
+	
 </body>
 </html>
