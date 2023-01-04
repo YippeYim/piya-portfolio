@@ -30,9 +30,6 @@ body{
 	display:flex;
 	gap:1.2em;
 }
-.hidden{
-	display:none;
-}
 #burger-img,
 #cloud-cross-img,
 #edu-cross-img{
@@ -207,6 +204,7 @@ body{
 	margin-left:2em;
 	margin-right:auto;
 }
+#certificate-btn,
 #github-btn{
 	width:fit-content;
 	margin:auto;
@@ -214,15 +212,50 @@ body{
 	flex-direction: column;
 	margin-top:3em;
 }
+#certificate-btn,
 #github-btn img{
 	width:5vw;
 	margin:auto;
 }
+#certificate-btn,
 #github-btn h3{
 	/* display:inline; */
 	text-align: center;
 }
 
+#contact-container{
+	/* font-size:5vw; */
+	font-size:2.4rem;
+	width:fit-content;
+	margin:5em auto;
+}
+#contact-container div{
+	padding-bottom:0.5em;
+	display:grid;
+	grid-template-columns: 1fr 4fr;
+}
+#contact-container strong{
+	margin-right:0em;
+	margin-left:auto;
+}
+#contact-container span{
+	margin-left:0.7em;
+	padding:0rem 0.5rem;
+	border:1px solid gray;
+	border-radius: 5px;
+}
+#map-small{
+	display:block;
+	margin:auto;
+}
+#map-smaller{
+	display:none;
+	margin:auto;
+}
+
+.hidden{
+	display:none;
+}
 @media screen and (max-width:1150px){
 	/* change to burger menu */
 	#menu{
@@ -318,5 +351,20 @@ body{
 		margin-top:4em;
 	}
 
+	#map-small{
+		display:none;
+	}
+	#map-smaller{
+		display:block;
+	}
 
+}
+@media screen and (max-width:425px){
+	#map-small,
+	#map-smaller{
+		display:none;
+	}
+	#contact-container{
+		font-size:5vw;
+	}
 }
