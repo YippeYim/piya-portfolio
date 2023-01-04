@@ -191,14 +191,14 @@ body{
 	margin-right:2em;
 	margin-left:auto;
 }
-.work-box p{
+.work-box div{
 	padding-left:1em;
 }
-.work-box:nth-of-type(2n+2) p,
+.work-box:nth-of-type(2n+2) div,
 .work-box:nth-of-type(2n+2) h3{
 	text-align: right;
 }
-.work-box:nth-of-type(2n+2) p{
+.work-box:nth-of-type(2n+2) div{
 	padding-right:2em;
 	padding-left:0em;
 }
@@ -292,11 +292,11 @@ body{
 		max-width:40vw;	
 	}
 
-	.work-box:nth-of-type(2n+2) p,
+	.work-box:nth-of-type(2n+2) div,
 	.work-box:nth-of-type(2n+2) h3{
 		text-align: left;
 	}
-	.work-box:nth-of-type(2n+2) p{
+	.work-box:nth-of-type(2n+2) div{
 		padding-right:0em;
 		padding-left:2em;
 	}
@@ -309,7 +309,7 @@ body{
 		flex-direction: column;
 	}
 	.work-box img,
-	.work-box p,
+	.work-box div,
 	.work-box h3{
 		width:70vw;
 		margin:auto;
