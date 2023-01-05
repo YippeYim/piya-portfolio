@@ -1,4 +1,32 @@
 
+window.addEventListener('load',()=>{
+    // alert("สวัสดี คุณสามารถคลิกที่ 'ปิยะ' ทางขวาบนเพื่อชมรูปเล่มแฟ้มสะสมผลงานได้")
+    slowDisplayBoxes[0].classList.add("slow-display")
+})
+
+window.addEventListener("scroll",checkBoxes)
+
+const slowDisplayBoxes = document.querySelectorAll(".slow-boxes")
+const fastDisplayBoxes = document.querySelectorAll(".fast-boxes")
+function checkBoxes(){
+    const triggerBottom = window.innerHeight / 5 * 4
+    // console.log(slowDisplayBoxes)
+
+    slowDisplayBoxes.forEach(box => {
+        const boxTop = box.getBoundingClientRect().top 
+
+        if (boxTop < triggerBottom){
+            box.classList.add("slow-display")
+        }
+    });
+    fastDisplayBoxes.forEach(box => {
+        const boxTop = box.getBoundingClientRect().top 
+
+        if (boxTop < triggerBottom){
+            box.classList.add("fast-display")
+        }
+    });
+}
 
 function displayCloudMenu(){
     document.querySelector("#burger-img").style.display = 'none'
