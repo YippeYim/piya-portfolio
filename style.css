@@ -11,7 +11,6 @@
 *{
 	margin:0px;
 	/* border:1px solid red; */
-	/* line-height:2rem; */
 	color:var(--lightRed);
 }
 *[onclick]{
@@ -132,6 +131,7 @@ body{
 }
 
 #personal-information{
+	line-height:5rem;
 	display:flex;
 	font-size:2.8rem;
 	justify-content: center;
@@ -164,6 +164,8 @@ body{
 	font-size:3rem;
 }
 #education-btn{
+	margin-top:1em;
+	margin-bottom:4em;
 	padding:1rem;
 	/* background-color: gainsboro; */
 	border-radius: 0.5rem;
@@ -382,6 +384,11 @@ body{
 .hidden{
 	display:none;
 }
+
+.disable-scroll{
+	overflow: hidden;
+}
+
 @media screen and (max-width:1150px){
 	/* change to burger menu */
 	#menu{
@@ -444,8 +451,20 @@ body{
 		padding:0em 0.5em;
 	}
 
+	#education-info-container{
+		width:80vw;
+		margin:0.3em;
+	}
+	#education-info-container .tr{
+		width:50vw;
+		height:auto;
+	}
+
 	#skill-container{
 		flex-direction: column;
+	}
+	.skill-box{
+		width:80vw;
 	}
 	.skill-box img{
 		max-width:40vw;	
@@ -502,6 +521,6 @@ body{
 		display:none;
 	}
 	#contact-container{
-		font-size:5vw;
+		font-size:4vw;
 	}
 }

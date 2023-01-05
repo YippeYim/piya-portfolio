@@ -14,8 +14,10 @@ function closeCloudMenu(){
 function displayEducationInfoContainer(){
     document.querySelector("#education-info-container").style.display = 'block'
     document.querySelector("#edu-cross-img").style.display = 'block'
+    document.querySelector("body").classList.add("disable-scroll")
 }
 function closeEducationInfoContainer(){
     document.querySelector("#education-info-container").style.display = 'none'
     document.querySelector("#edu-cross-img").style.display = 'none'
+    document.querySelector("body").classList.remove("disable-scroll")
 }
